@@ -1,9 +1,13 @@
 // Error 1:
 let message = 'Welcome to the debugging exercise!';
-console.log(mesage); 
+console.log(message); 
 
 // Error 2: 
-let button = document.querySelector('.actionButton'); 
+console.log(document);
+
+let button = document.querySelector('#actionButton'); 
+
+console.log(button);
 button.addEventListener('click', eventHandler); 
 
 // Error 3: 
@@ -20,10 +24,11 @@ function displayOutput() {
 
 // Error 6: Misusing variable scope
 function updateMessage() {
-  let localMessage = 'Updated message';
+  let localMessage = 'Updated message'
+  console.log(localMessage);
 }
 updateMessage();
-console.log(localMessage); 
+
 
 // Error 7:
 document.getElementById('testButton').addEventListener('click', testFunction());
@@ -93,3 +98,4 @@ let myString = 'Hello';
 myString.property = 'World';
 console.log(myString.property); 
 
+}
